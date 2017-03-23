@@ -4,7 +4,7 @@ s.name               = "DGAnalyticp"
 
 s.version            = "1.0.0"
 
-s.summary         = ""
+s.summary         = "DGAnalytic"
 
 s.license              = "MIT"
 
