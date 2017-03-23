@@ -18,7 +18,7 @@ s.source              = { :git => "https://bitbucket.org/patriotTeam/dganalytic-
 
 s.frameworks = "DGAnalytic"
 
-s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(SRCROOT)/Framework"}
+s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(SRCROOT)/"}
 
 s.vendored_frameworks = "DGAnalytic.framework"
 
