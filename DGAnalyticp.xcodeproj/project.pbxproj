@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E3D940091E83BB67001DBBF1 /* DGAnalyticp.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D940071E83BB67001DBBF1 /* DGAnalyticp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D940111E83BBB2001DBBF1 /* DGAnalytic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D940101E83BBB2001DBBF1 /* DGAnalytic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3D940041E83BB67001DBBF1 /* DGAnalyticp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGAnalyticp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D940071E83BB67001DBBF1 /* DGAnalyticp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGAnalyticp.h; sourceTree = "<group>"; };
 		E3D940081E83BB67001DBBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D940101E83BBB2001DBBF1 /* DGAnalytic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DGAnalytic.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D940111E83BBB2001DBBF1 /* DGAnalytic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +51,17 @@
 			children = (
 				E3D940071E83BB67001DBBF1 /* DGAnalyticp.h */,
 				E3D940081E83BB67001DBBF1 /* Info.plist */,
+				E3D9400F1E83BBB2001DBBF1 /* Framework */,
 			);
 			path = DGAnalyticp;
+			sourceTree = "<group>";
+		};
+		E3D9400F1E83BBB2001DBBF1 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E3D940101E83BBB2001DBBF1 /* DGAnalytic.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +253,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DGAnalyticp/Framework",
+				);
 				INFOPLIST_FILE = DGAnalyticp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -258,6 +274,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DGAnalyticp/Framework",
+				);
 				INFOPLIST_FILE = DGAnalyticp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
