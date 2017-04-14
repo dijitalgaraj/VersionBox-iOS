@@ -31,6 +31,7 @@ typedef enum {
 @interface DGAnalytics : NSObject
 @property (nonatomic) NSString *key;
 @property (nonatomic) NSTimer *timer;
+@property (nonatomic) BOOL isEnabled;
 
 + (instancetype)initWithKey:(NSString*)key;
 
