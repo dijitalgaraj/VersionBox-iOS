@@ -35,6 +35,8 @@ typedef enum {
 
 + (instancetype)initWithKey:(NSString*)key;
 
++ (NSString*)getDGAnalyticUUID;
+
 + (void)sendEventWithPlayerId:(NSString*)playerId;
 
 + (void)sendEventWithType:(EventType)type value:(float)value endpoint:(NSString*)enpoint parameters:(NSString*)paramaters
