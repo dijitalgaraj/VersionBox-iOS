@@ -28,14 +28,24 @@ typedef enum {
     DGDeviceCustomName,
 }EventType;
 
+typedef enum {
+    none = 0,
+    shortLog,
+    mediumLog,
+    longLog,
+}LogLevel;
+
 @interface DGAnalytics : NSObject
 @property (nonatomic) NSString *key;
 @property (nonatomic) NSTimer *timer;
 @property (nonatomic) BOOL isEnabled;
+@property (nonatomic) NSInteger logLevel;
 
 + (instancetype)initWithKey:(NSString*)key;
 
 + (NSString*)getDGAnalyticUUID;
+
++ (void)setLogLevel:(LogLevel)level;
 
 + (void)sendEventWithPlayerId:(NSString*)playerId;
 
