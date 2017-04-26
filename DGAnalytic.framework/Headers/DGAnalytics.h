@@ -29,10 +29,10 @@ typedef enum {
 }EventType;
 
 typedef enum {
-    none = 0,
-    shortLog,
-    mediumLog,
-    longLog,
+    DGLogLevelOff = 0,
+    DGLogLevelBasic,
+    DGLogLevelMedium,
+    DGLogLevelDebug,
 }LogLevel;
 
 @interface DGAnalytics : NSObject
@@ -40,8 +40,11 @@ typedef enum {
 @property (nonatomic) NSTimer *timer;
 @property (nonatomic) BOOL isEnabled;
 @property (nonatomic) NSInteger logLevel;
+@property (nonatomic) NSString *urlString;
 
 + (instancetype)initWithKey:(NSString*)key;
+
++ (void)setSecureUrl:(BOOL)isSecure;
 
 + (NSString*)getDGAnalyticUUID;
 
