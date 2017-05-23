@@ -3,7 +3,7 @@
 //  DGAnalytic
 //
 //  Created by Mehmet Akif Şengül on 29.12.2016.
-//  Copyright © 2016 Mehmet Akif Şengül. All rights reserved.
+//  Copyright © 2016 Dijital Garaj. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
