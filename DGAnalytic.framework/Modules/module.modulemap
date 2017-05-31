@@ -1,6 +1,0 @@
-framework module DGAnalytic {
-  umbrella header "DGAnalytic.h"
-
-  export *
-  module * { export * }
-}
