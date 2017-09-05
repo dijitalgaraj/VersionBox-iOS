@@ -4,7 +4,7 @@
 //
 //  Created by Dijital Garaj on 29.12.2016.
 //  Copyright © 2016 Dijital Garaj. All rights reserved.
-//  Version 1.0.8
+//  Version 1.0.12
 
 #import <UIKit/UIKit.h>
 

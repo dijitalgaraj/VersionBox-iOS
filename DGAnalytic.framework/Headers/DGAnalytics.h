@@ -4,7 +4,7 @@
 //
 //  Created by Dijital Garaj on 2.01.2017.
 //  Copyright © 2017 Dijital Garaj. All rights reserved.
-//  Version 1.0.8
+//  Version 1.0.12
 
 #import <Foundation/Foundation.h>
 
@@ -46,6 +46,7 @@ typedef enum {
 @property (nonatomic) NSInteger logLevel;
 @property (nonatomic) NSString *urlString;
 
++ (id)sharedController;
 
 + (instancetype)initWithKey:(NSString*)key;
 
@@ -121,6 +122,6 @@ typedef enum {
 + (void)sendEventWithType:(EventType)type endpoint:(NSString*)enpoint parameters:(NSString*)paramaters
                  response:(NSString*)response;
 */
-
+- (NSString*)getDeviceModel;
 
 @end
