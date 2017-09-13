@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3D940091E83BB67001DBBF1 /* DGAnalytic.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D940071E83BB67001DBBF1 /* DGAnalytic.h */; };
+		E3D940091E83BB67001DBBF1 /* MainHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D940071E83BB67001DBBF1 /* MainHeader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3D940041E83BB67001DBBF1 /* VersionBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3D940071E83BB67001DBBF1 /* DGAnalytic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGAnalytic.h; sourceTree = "<group>"; };
+		E3D940071E83BB67001DBBF1 /* MainHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainHeader.h; sourceTree = "<group>"; };
 		E3D940081E83BB67001DBBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +46,7 @@
 		E3D940061E83BB67001DBBF1 /* DGAnalyticp */ = {
 			isa = PBXGroup;
 			children = (
-				E3D940071E83BB67001DBBF1 /* DGAnalytic.h */,
+				E3D940071E83BB67001DBBF1 /* MainHeader.h */,
 				E3D940081E83BB67001DBBF1 /* Info.plist */,
 			);
 			path = DGAnalyticp;
@@ -59,7 +59,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D940091E83BB67001DBBF1 /* DGAnalytic.h in Headers */,
+				E3D940091E83BB67001DBBF1 /* MainHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Mehmet Akif Şengül";
+				ORGANIZATIONNAME = "Dijital Garaj";
 				TargetAttributes = {
 					E3D940031E83BB67001DBBF1 = {
 						CreatedOnToolsVersion = 8.2.1;
