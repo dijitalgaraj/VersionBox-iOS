@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3D940091E83BB67001DBBF1 /* DGAnalyticp.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D940071E83BB67001DBBF1 /* DGAnalyticp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D940091E83BB67001DBBF1 /* DGAnalytic.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D940071E83BB67001DBBF1 /* DGAnalytic.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E3D940041E83BB67001DBBF1 /* DGAnalyticp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGAnalyticp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3D940071E83BB67001DBBF1 /* DGAnalyticp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGAnalyticp.h; sourceTree = "<group>"; };
+		E3D940041E83BB67001DBBF1 /* VersionBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D940071E83BB67001DBBF1 /* DGAnalytic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGAnalytic.h; sourceTree = "<group>"; };
 		E3D940081E83BB67001DBBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,7 +38,7 @@
 		E3D940051E83BB67001DBBF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E3D940041E83BB67001DBBF1 /* DGAnalyticp.framework */,
+				E3D940041E83BB67001DBBF1 /* VersionBox.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,7 +46,7 @@
 		E3D940061E83BB67001DBBF1 /* DGAnalyticp */ = {
 			isa = PBXGroup;
 			children = (
-				E3D940071E83BB67001DBBF1 /* DGAnalyticp.h */,
+				E3D940071E83BB67001DBBF1 /* DGAnalytic.h */,
 				E3D940081E83BB67001DBBF1 /* Info.plist */,
 			);
 			path = DGAnalyticp;
@@ -59,16 +59,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D940091E83BB67001DBBF1 /* DGAnalyticp.h in Headers */,
+				E3D940091E83BB67001DBBF1 /* DGAnalytic.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E3D940031E83BB67001DBBF1 /* DGAnalyticp */ = {
+		E3D940031E83BB67001DBBF1 /* VersionBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3D9400C1E83BB67001DBBF1 /* Build configuration list for PBXNativeTarget "DGAnalyticp" */;
+			buildConfigurationList = E3D9400C1E83BB67001DBBF1 /* Build configuration list for PBXNativeTarget "VersionBox" */;
 			buildPhases = (
 				E3D93FFF1E83BB67001DBBF1 /* Sources */,
 				E3D940001E83BB67001DBBF1 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = DGAnalyticp;
+			name = VersionBox;
 			productName = DGAnalyticp;
-			productReference = E3D940041E83BB67001DBBF1 /* DGAnalyticp.framework */;
+			productReference = E3D940041E83BB67001DBBF1 /* VersionBox.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E3D93FFE1E83BB67001DBBF1 /* Build configuration list for PBXProject "DGAnalyticp" */;
+			buildConfigurationList = E3D93FFE1E83BB67001DBBF1 /* Build configuration list for PBXProject "VersionBox" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,7 +111,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E3D940031E83BB67001DBBF1 /* DGAnalyticp */,
+				E3D940031E83BB67001DBBF1 /* VersionBox */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E3D93FFE1E83BB67001DBBF1 /* Build configuration list for PBXProject "DGAnalyticp" */ = {
+		E3D93FFE1E83BB67001DBBF1 /* Build configuration list for PBXProject "VersionBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3D9400A1E83BB67001DBBF1 /* Debug */,
@@ -289,7 +289,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3D9400C1E83BB67001DBBF1 /* Build configuration list for PBXNativeTarget "DGAnalyticp" */ = {
+		E3D9400C1E83BB67001DBBF1 /* Build configuration list for PBXNativeTarget "VersionBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3D9400D1E83BB67001DBBF1 /* Debug */,

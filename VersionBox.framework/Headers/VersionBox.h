@@ -1,6 +1,6 @@
 //
-//  DGAnalytics.h
-//  DGAnalytic
+//  VersionBox.h
+//  VersionBox
 //
 //  Created by Dijital Garaj on 2.01.2017.
 //  Copyright © 2017 Dijital Garaj. All rights reserved.
@@ -38,7 +38,7 @@ typedef enum {
 }LogLevel;
 
 
-@interface DGAnalytics : NSObject
+@interface VersionBox : NSObject
 @property (nonatomic) NSString *key;
 @property (nonatomic) NSTimer *timer;
 @property (nonatomic) BOOL isEnabled;
@@ -58,7 +58,7 @@ typedef enum {
 
 + (void)setLogLevel:(LogLevel)level;
 
-+ (NSString*)getDGAnalyticUUID;
++ (NSString*)getVersionBoxUUID;
 
 + (void)sendUsername:(NSString*)username;
 
