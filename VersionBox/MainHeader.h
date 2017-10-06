@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double VersionBoxVersionNumber;
 //! Project version string for DGAnalyticp.
 FOUNDATION_EXPORT const unsigned char VersionBoxVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <DGAnalyticp/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <DGAnalytic/PublicHeader.h>
 
 #import <DGAnalytic/VersionBox.h>
