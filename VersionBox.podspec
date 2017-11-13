@@ -14,7 +14,7 @@ s.author               = "Dijital Garaj"
 
 s.platform            = :ios
 
-s.source              = { :git => "https://bitbucket.org/patriotTeam/dganalytic-pod.git", :tag => "1.0.12" }
+s.source              = { :git => "https://bitbucket.org/patriotTeam/dganalytic-pod.git", :tag => "1.0.13" }
 
 s.frameworks = "VersionBox"
 
