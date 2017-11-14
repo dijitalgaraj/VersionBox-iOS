@@ -39,12 +39,6 @@ typedef enum {
 
 
 @interface VersionBox : NSObject
-@property (nonatomic) NSString *key;
-@property (nonatomic) NSTimer *timer;
-@property (nonatomic) BOOL isEnabled;
-@property (nonatomic) BOOL checkUpdates;
-@property (nonatomic) NSInteger logLevel;
-@property (nonatomic) NSString *urlString;
 
 + (id)sharedController;
 
@@ -53,6 +47,8 @@ typedef enum {
 + (void)saveStoreUserID:(NSString*)userID;
 
 + (void)setSecureUrl:(BOOL)isSecure;
+
++ (void)useDGAnalyticUrl:(BOOL)isDGUrl;
 
 + (void)checkUpdates:(BOOL)check;
 
