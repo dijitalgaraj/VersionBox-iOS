@@ -2,9 +2,9 @@ Pod::Spec.new do |s|
 
 s.name               = "VersionBox"
 
-s.version            = "1.0.14"
+s.version            = "1.0.15"
 
-s.summary         = "DGAnalytic"
+s.summary         = "VersionBox"
 
 s.license              = "MIT"
 
@@ -14,7 +14,7 @@ s.author               = "Dijital Garaj"
 
 s.platform            = :ios
 
-s.source              = { :git => "https://bitbucket.org/patriotTeam/dganalytic-pod.git", :tag => "1.0.14" }
+s.source              = { :git => "https://github.com/dijitalgaraj/VersionBox-iOS.git", :tag => "1.0.15" }
 
 s.frameworks = "VersionBox"
 
