@@ -4,7 +4,7 @@
 //
 //  Created by Dijital Garaj on 2.01.2017.
 //  Copyright © 2017 Dijital Garaj. All rights reserved.
-//  Version 1.0.15
+//  Version 1.0.16
 
 #import <Foundation/Foundation.h>
 
@@ -27,6 +27,7 @@ typedef enum {
     DGExternalAccessoryBatteryStatus,
     DGPlayerId,
     DGDeviceCustomName,
+    DGBeaconDetected,
 }EventType;
 
 
@@ -50,19 +51,13 @@ typedef enum {
 
 + (void)useDGAnalyticUrl:(BOOL)isDGUrl;
 
++ (void)useStageApiUrl:(BOOL)isStage;
+
 + (void)checkUpdates:(BOOL)check;
 
 + (void)setLogLevel:(LogLevel)level;
 
 + (NSString*)getVersionBoxUUID;
-
-+ (void)sendUsername:(NSString*)username;
-
-+ (void)sendWarehouse:(NSString*)warehouse;
-
-+ (void)sendError:(NSString*)error;
-
-+ (void)sendDeviceName:(NSString*)deviceName;
 
 + (void)sendEventWithPlayerId:(NSString*)playerId;
 
