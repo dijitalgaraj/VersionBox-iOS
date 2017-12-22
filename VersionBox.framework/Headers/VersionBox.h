@@ -59,6 +59,8 @@ typedef enum {
 
 + (NSString*)getVersionBoxUUID;
 
++ (void)sendEventWithBeaconUUID:(NSString*)uuid major:(NSString*)major minor:(NSString*)minor regionName:(NSString*)regionName ;
+
 + (void)sendEventWithPlayerId:(NSString*)playerId;
 
 + (void)sendEventWithPageName:(NSString*)pageName;
