@@ -51,8 +51,6 @@ typedef enum {
 
 + (void)useDGAnalyticUrl:(BOOL)isDGUrl;
 
-+ (void)useStageApiUrl:(BOOL)isStage;
-
 + (void)checkUpdates:(BOOL)check;
 
 + (void)setLogLevel:(LogLevel)level;
