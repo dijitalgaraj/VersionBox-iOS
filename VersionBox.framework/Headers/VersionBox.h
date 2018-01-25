@@ -63,15 +63,15 @@ typedef enum {
 
 + (void)sendEventWithPageName:(NSString*)pageName;
 
-+ (void)sendUserLoginEventWithParameters:(NSString*)parameters response:(NSString*)response;
++ (void)sendUserLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response;
 
-+ (void)sendUserLoginEventWithParameters:(NSString*)parameters response:(NSString*)response username:(NSString*)username;
++ (void)sendUserLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response username:(NSString*)username;
 
-+ (void)sendUserLoginEventWithParameters:(NSString*)parameters response:(NSString*)response username:(NSString*)username warehouse:(NSString*)warehouse;
++ (void)sendUserLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response username:(NSString*)username warehouse:(NSString*)warehouse;
 
-+ (void)sendUserCanNotLoginEventWithParameters:(NSString*)parameters response:(NSString*)response;
++ (void)sendUserCanNotLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response;
 
-+ (void)sendUserCanNotLoginEventWithParameters:(NSString*)parameters response:(NSString*)response error:(NSString*)error;
++ (void)sendUserCanNotLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response error:(NSString*)error;
 
 + (void)sendLocationServiceStatusEventWithValue:(NSInteger)value;
 
@@ -95,24 +95,14 @@ typedef enum {
 
 + (void)sendAppOpenEventWithUsername:(NSString*)username;
 
-+ (void)sendDataNotRetrievedEventWithEndpoint:(NSString*)endpoint parameters:(NSString*)parameters response:(NSString*)response;
++ (void)sendDataNotRetrievedEventWithEndpoint:(NSString*)endpoint parameters:(NSDictionary*)parameters response:(NSString*)response;
 
-//+ (void)sendRequestStartTime:(NSDate*)startDate endpoint:(NSString*)endpoint;
++ (void)sendEventWithType:(EventType)type value:(float)value endpoint:(NSString*)enpoint parameters:(NSDictionary *)parameters response:(NSDictionary *)response;
 
-//+ (void)sendRequestEndTime:(NSDate*)finishDate endpoint:(NSString*)endpoint parameters:(NSString*)parameters response:(NSString*)response;
++ (NSDate*)requestStartDate;
 
-+ (void)sendEventWithType:(EventType)type value:(float)value endpoint:(NSString*)enpoint parameters:(NSString *)paramaters response:(NSString *)response;
++ (void)sendResponseTimeEventWithEndpoint:(NSString*)endpoint parameters:(NSDictionary*)parameters response:(NSDictionary*)response startDate:(NSDate*)startDate;
 
-/*
-+ (void)sendEventWithType:(EventType)type value:(float)value endpoint:(NSString*)enpoint parameters:(NSString*)paramaters
-                    response:(NSString*)response extraData:(NSString*)extraData;
-
-+ (void)sendEventWithType:(EventType)type;
-
-
-+ (void)sendEventWithType:(EventType)type endpoint:(NSString*)enpoint parameters:(NSString*)paramaters
-                 response:(NSString*)response;
-*/
 - (NSString*)getDeviceModel;
 
 @end
