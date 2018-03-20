@@ -4,7 +4,7 @@
 //
 //  Created by Dijital Garaj on 2.01.2017.
 //  Copyright © 2017 Dijital Garaj. All rights reserved.
-//  Version 1.0.17
+//  Version 1.0.18
 
 #import <Foundation/Foundation.h>
 
@@ -48,8 +48,6 @@ typedef enum {
 + (void)saveStoreUserID:(NSString*)userID;
 
 + (void)setSecureUrl:(BOOL)isSecure;
-
-+ (void)useDGAnalyticUrl:(BOOL)isDGUrl;
 
 + (void)checkUpdates:(BOOL)check;
 
