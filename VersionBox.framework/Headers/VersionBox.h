@@ -4,7 +4,7 @@
 //
 //  Created by Dijital Garaj on 2.01.2017.
 //  Copyright © 2017 Dijital Garaj. All rights reserved.
-//  Version 1.0.18
+//  Version 1.0.19
 
 #import <Foundation/Foundation.h>
 
@@ -71,11 +71,11 @@ typedef enum {
 
 + (void)sendUserCanNotLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response error:(NSString*)error;
 
-+ (void)sendLocationServiceStatusEventWithValue:(NSInteger)value;
+//+ (void)sendLocationServiceStatusEventWithValue:(NSInteger)value;
 
 + (void)sendExternalAccessoryBatteryIsLowEvent;
 
-+ (void)sendBluetoothStatusEventWithValue:(NSInteger)value;
+//+ (void)sendBluetoothStatusEventWithValue:(NSInteger)value;
 
 + (void)sendUserLogoutEvent;
 
