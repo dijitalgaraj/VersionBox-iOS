@@ -95,6 +95,8 @@ typedef enum {
 
 + (void)sendAppOpenEventWithUsername:(NSString*)username;
 
++ (void)sendAppOpenEventWithUsername:(NSString *)username deviceName:(NSString *)deviceName serialNumber:(NSString*)serialNumber;
+
 + (void)sendDataNotRetrievedEventWithEndpoint:(NSString*)endpoint parameters:(NSDictionary*)parameters error:(NSError*)error;
 
 + (void)sendEventWithType:(EventType)type value:(float)value endpoint:(NSString*)enpoint parameters:(NSDictionary *)parameters response:(NSDictionary *)response;
