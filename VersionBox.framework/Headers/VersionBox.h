@@ -4,7 +4,7 @@
 //
 //  Created by Dijital Garaj on 2.01.2017.
 //  Copyright © 2017 Dijital Garaj. All rights reserved.
-//  Version 1.0.19
+//  Version 1.0.20
 
 #import <Foundation/Foundation.h>
 
@@ -78,6 +78,8 @@ typedef enum {
 //+ (void)sendBluetoothStatusEventWithValue:(NSInteger)value;
 
 + (void)sendUserLogoutEvent;
+
++ (void)sendEventWithSerialNumber:(NSString*)serialNumber;
 
 + (void)sendDeviceCustomName:(NSString*)deviceCustomName;
 
