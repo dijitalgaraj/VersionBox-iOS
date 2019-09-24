@@ -1,5 +1,4 @@
 //
-//  DGAnalytic.h
 //  VersionBox
 //
 //  Created by Mehmet Akif Şengül on 23.03.2017.

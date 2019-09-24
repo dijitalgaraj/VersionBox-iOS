@@ -2,109 +2,41 @@
 //  VersionBox.h
 //  VersionBox
 //
-//  Created by Dijital Garaj on 2.01.2017.
-//  Copyright © 2017 Dijital Garaj. All rights reserved.
-//  Version 1.0.20
+//  Created by Mehmet Akif Şengül on 19.08.2019.
+//  Copyright © 2019 Dijital Garaj. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+#import "Enums.h"
 
-
-typedef enum {
-    DGResponceTime,
-    DGAppOpen,
-    DGAppClose,
-    DGLogoutTimeout,
-    DGUserLogin,
-    DGUserLogout,
-    DGPageOpen,
-    DGPageClose,
-    DGUserCanNotLogin,
-    DGDataNotRetrieved,
-    DGBluetoothStatus,
-    DGLocationServiceStatus,
-    DGWarehouseNotFound,
-    DGExternalAccessoryBatteryIsLow,
-    DGExternalAccessoryBatteryStatus,
-    DGPlayerId,
-    DGDeviceCustomName,
-    DGBeaconDetected,
-}EventType;
-
-
-typedef enum {
-    DGLogLevelOff = 0,
-    DGLogLevelBasic,
-    DGLogLevelMedium,
-    DGLogLevelDebug,
-}LogLevel;
-
+NS_ASSUME_NONNULL_BEGIN
 
 @interface VersionBox : NSObject
 
-+ (id)sharedController;
-
-+ (instancetype)initWithKey:(NSString*)key;
-
-+ (void)saveStoreUserID:(NSString*)userID;
-
-+ (void)setSecureUrl:(BOOL)isSecure;
-
-+ (void)checkUpdates:(BOOL)check;
++ (void)initWithKey:(NSString*)key;
 
 + (void)setLogLevel:(LogLevel)level;
 
-+ (NSString*)getVersionBoxUUID;
++ (void)appOpen;
 
-+ (void)sendEventWithBeaconUUID:(NSString*)uuid major:(NSString*)major minor:(NSString*)minor regionName:(NSString*)regionName ;
++ (void)pageOpen:(NSString*)pageName;
 
-+ (void)sendEventWithPlayerId:(NSString*)playerId;
++ (void)sendErrorWithType:(ErrorType)type message:(nullable NSString*)message;
 
-+ (void)sendEventWithPageName:(NSString*)pageName;
++ (void)sendErrorWithKey:(NSString*)key message:(nullable NSString*)message;
 
-+ (void)sendUserLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response;
++ (void)userLoginWithUserInfoType:(UserInfoType)type userInfo:(NSString*)userInfo message:(nullable NSString*)message;
 
-+ (void)sendUserLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response username:(NSString*)username;
++ (void)userLogout;
 
-+ (void)sendUserLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response username:(NSString*)username warehouse:(NSString*)warehouse;
++ (void)sendActionWithType:(ActionType)type message:(nullable NSString*)message;
 
-+ (void)sendUserCanNotLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response;
++ (void)sendActionWithKey:(NSString*)key message:(nullable NSString*)message;
 
-+ (void)sendUserCanNotLoginEventWithParameters:(NSDictionary*)parameters response:(NSDictionary*)response error:(NSString*)error;
++ (void)setDeviceMetadataWithType:(MetadataType)type value:(NSString*)value;
 
-//+ (void)sendLocationServiceStatusEventWithValue:(NSInteger)value;
-
-+ (void)sendExternalAccessoryBatteryIsLowEvent;
-
-//+ (void)sendBluetoothStatusEventWithValue:(NSInteger)value;
-
-+ (void)sendUserLogoutEvent;
-
-+ (void)sendEventWithSerialNumber:(NSString*)serialNumber;
-
-+ (void)sendDeviceCustomName:(NSString*)deviceCustomName;
-
-+ (void)sendExternalAccessoryBatteryStatusWithValue:(NSInteger)value;
-
-+ (void)sendAppOpenEventWithDeviceName:(NSString*)deviceName;
-
-+ (void)sendAppCloseEvent;
-
-+ (void)sendAppOpenEvent;
-
-+ (void)sendAppOpenEventWithUsername:(NSString*)username deviceName:(NSString*)deviceName;
-
-+ (void)sendAppOpenEventWithUsername:(NSString*)username;
-
-+ (void)sendAppOpenEventWithUsername:(NSString *)username deviceName:(NSString *)deviceName serialNumber:(NSString*)serialNumber;
-
-+ (void)sendDataNotRetrievedEventWithEndpoint:(NSString*)endpoint parameters:(NSDictionary*)parameters error:(NSError*)error;
-
-+ (void)sendEventWithType:(EventType)type value:(float)value endpoint:(NSString*)enpoint parameters:(NSDictionary *)parameters response:(NSDictionary *)response;
-
-+ (NSDate*)requestStartDate;
-
-+ (void)sendResponseTimeEventWithEndpoint:(NSString*)endpoint parameters:(NSDictionary*)parameters response:(NSDictionary*)response startDate:(NSDate*)startDate;
-
-- (NSString*)getDeviceModel;
++ (void)beaconDetected:(NSString*)uuid major:(NSString*)major minor:(NSString*)minor regionName:(NSString*)regionName;
 
 @end
+
+NS_ASSUME_NONNULL_END

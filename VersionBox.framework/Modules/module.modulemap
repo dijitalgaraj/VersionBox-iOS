@@ -1,0 +1,6 @@
+framework module VersionBox {
+  umbrella header "VersionBox.h"
+
+  export *
+  module * { export * }
+}
