@@ -39,7 +39,6 @@ typedef enum : NSUInteger {
     off,
     basic,
     debug,
-    admin,
 } LogLevel;
 
 @interface Enums : NSObject
