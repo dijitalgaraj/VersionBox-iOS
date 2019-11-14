@@ -4,7 +4,7 @@
 //
 //  Created by Mehmet Akif Şengül on 19.08.2019.
 //  Copyright © 2019 Dijital Garaj. All rights reserved.
-//
+//  2.0.5
 
 #import <Foundation/Foundation.h>
 #import "Enums.h"
@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface VersionBox : NSObject
 
 + (void)initWithKey:(NSString*)key;
+
++ (void)initWithKey:(NSString *)key pingRange:(int)range;
 
 + (void)setLogLevel:(LogLevel)level;
 
