@@ -4,7 +4,7 @@
 //
 //  Created by Mehmet Akif Şengül on 19.08.2019.
 //  Copyright © 2019 Dijital Garaj. All rights reserved.
-//  2.0.5
+//  2.0.9
 
 #import <Foundation/Foundation.h>
 #import "Enums.h"
